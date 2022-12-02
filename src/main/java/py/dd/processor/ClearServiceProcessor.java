@@ -124,10 +124,10 @@ public class ClearServiceProcessor extends DeploymentDaemonProcessor {
         ServiceMetadata serviceInfo = serviceStore.get(service);
         logger.debug("Delete service running directroy {}",
             ddConfig.buildServiceRunningPath(service));
-        FileUtils.deleteQuietly(ddConfig.buildServiceRunningPath(service).toFile());
+        FileUtils.deleteDirectory(ddConfig.buildServiceRunningPath(service).toFile());
         logger.debug("Delete service installation directory {}",
             ddConfig.buildServiceInstallationPath(service, serviceInfo.getVersion()));
-        FileUtils.deleteQuietly(
+        FileUtils.deleteDirectory(
             ddConfig.buildServiceInstallationPath(service, serviceInfo.getVersion()).toFile());
         logger.debug("Delete service package {}",
             ddConfig.buildServicePackagePath(service, serviceInfo.getVersion()));
