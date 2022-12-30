@@ -1,0 +1,14 @@
+.classpath
+.project
+.settings
+target
+*.log
+*.log.*
+config_info
+/config
+/logs
+/bin
+manifest.mf
+*.iml
+mutexprocess.lock
+.flattened-pom.xml
