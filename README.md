@@ -1,0 +1,1 @@
+DeploymentDaemon service is used for the deployment, cleanup, upgrade, and other operations of other services in ZettaStor DBS.
